@@ -1,0 +1,51 @@
+
+h1{
+  font-size: 40px;
+  line-height: 1.2;
+  font-weight: 700;
+  color: #111111;
+  margin-bottom: 48px;
+}
+
+
+
+h1 span:first-child{
+  font-size: 14px;
+  color: #CB253C;
+  font-weight: 400;
+  display: block;
+}
+h1 span:last-child{
+  font-size: 28px;
+  display: block;
+  color: #6B7280;
+  line-height: 1.15;
+}
+#startingAt{
+  color: #6B7280;
+  line-height: 1.2;
+  font-size: 14px;
+}
+
+p{
+  margin-top: 14px;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #6B7280;
+}
+
+::ng-deep .mat-tab-list .mat-tab-labels .mat-tab-label-active {
+  font-size: 20px;
+}
+::ng-deep .mat-tab-list .mat-tab-labels .mat-tab-label {
+  font-size: 20px;
+}
+::ng-deep .mat-tab-group.mat-primary .mat-ink-bar, .mat-tab-nav-bar.mat-primary .mat-ink-bar{
+  background-color: #111111;
+}
+.mat-tab-group{
+  margin-bottom: 70px;
+}
+
+

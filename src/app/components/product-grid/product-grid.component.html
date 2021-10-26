@@ -1,0 +1,20 @@
+<mat-grid-list cols="3" rowHeight="100px" [gutterSize]="'16px'" class="pictureMargin">
+  <mat-grid-tile
+      *ngFor="let picture of productPictures"
+      [colspan]="picture.cols"
+      [rowspan]="picture.rows"
+      [style.background]="picture.color">
+    {{picture.text}}
+  </mat-grid-tile>
+</mat-grid-list>
+
+<mat-grid-list [cols]="breakpoint" rowHeight="100px" (window:resize)="onResize($event)">
+  <mat-grid-tile
+      *ngFor="let tile of featuresArray"
+      [colspan]="tile.cols"
+      [rowspan]="tile.rows"
+      [style.background]="tile.color">
+    {{tile.text}}
+  </mat-grid-tile>
+</mat-grid-list>
+
