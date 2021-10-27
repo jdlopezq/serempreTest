@@ -1,7 +1,41 @@
 .pictureMargin{
 margin-bottom: 76px;
 }
-.mat-grid-tile {
-border: #EEEFF2 solid 2px;
-border-radius: 10px;
+
+.mat-button-toggle{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: transparent;
+  height: inherit;
+  border: #EEEFF2 solid 2px;
+  border-radius: 8px;
+  padding: 24px;
+  width: 100%;
+  background-size: 300px;
+}
+.mat-button-toggle-checked{
+  border: #1E96D4 solid 2px;
+  background-color: transparent;
+  border-radius: 8px;
+  padding: 24px;
+}
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+.info {
+  vertical-align: top;
+  display: inline-block;
+  text-align: center;
+}
+.info-img{
+margin-bottom: 16px;
+}
+
+.caption {
+  font-size: 14px;
+  display: block;
 }

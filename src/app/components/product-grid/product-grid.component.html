@@ -1,20 +1,37 @@
-<mat-grid-list cols="3" rowHeight="100px" [gutterSize]="'16px'" class="pictureMargin">
+<mat-grid-list
+  cols="3"
+  rowHeight="100px"
+  [gutterSize]="'16px'"
+  class="pictureMargin"
+>
+  <mat-grid-tile colspan="3" rowspan="3">
+    <img [src]="initialImg" alt="" />
+  </mat-grid-tile>
   <mat-grid-tile
-      *ngFor="let picture of productPictures"
-      [colspan]="picture.cols"
-      [rowspan]="picture.rows"
-      [style.background]="picture.color">
-    {{picture.text}}
+    *ngFor="let picture of productPictures"
+    [colspan]="picture.cols"
+    [rowspan]="picture.rows"
+  >
+    <img [src]="picture.img" />
+    <mat-button-toggle [value]="picture.img" (change)="changeImg($event)">
+    </mat-button-toggle>
   </mat-grid-tile>
 </mat-grid-list>
+<mat-button-toggle-group> </mat-button-toggle-group>
 
-<mat-grid-list [cols]="breakpoint" rowHeight="100px" (window:resize)="onResize($event)">
+<mat-grid-list
+  [cols]="breakpoint"
+  rowHeight="100px"
+  (window:resize)="onResize($event)"
+>
   <mat-grid-tile
-      *ngFor="let tile of featuresArray"
-      [colspan]="tile.cols"
-      [rowspan]="tile.rows"
-      [style.background]="tile.color">
-    {{tile.text}}
+    *ngFor="let tile of featuresArray"
+    [colspan]="tile.cols"
+    [rowspan]="tile.rows"
+  >
+    <div class="info">
+      <img [src]="tile.img" class="info-img" />
+      <span class="caption">{{ tile.text }}</span>
+    </div>
   </mat-grid-tile>
 </mat-grid-list>
-

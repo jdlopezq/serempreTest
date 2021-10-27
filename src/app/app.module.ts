@@ -12,6 +12,8 @@ import { CommonModule } from '@angular/common';
 import { WarrantyComponent } from './components/warranty/warranty.component';
 import { FeaturesComponent } from './components/features/features.component';
 import { FinishedComponent } from './components/finished/finished.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { ReplacePipe } from './pipes/replace.pipe';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { FinishedComponent } from './components/finished/finished.component';
     ProductGridComponent,
     WarrantyComponent,
     FeaturesComponent,
-    FinishedComponent
+    FinishedComponent,
+    FooterComponent,
+    ReplacePipe
   ],
   imports: [
     AppRoutingModule,

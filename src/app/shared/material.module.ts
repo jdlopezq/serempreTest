@@ -7,6 +7,8 @@ import { MatTabsModule } from '@angular/material/tabs';
 import {MatCardModule} from '@angular/material/card';
 import {MatButtonToggleModule} from '@angular/material/button-toggle';
 import {MatIconModule} from '@angular/material/icon';
+import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatButtonModule} from '@angular/material/button';
 
 
 @NgModule({
@@ -19,7 +21,9 @@ import {MatIconModule} from '@angular/material/icon';
     MatTabsModule,
     MatCardModule,
     MatButtonToggleModule,
-    MatIconModule
+    MatIconModule,
+    MatToolbarModule,
+    MatButtonModule
   ],
   exports: [
     MatGridListModule,
@@ -30,7 +34,9 @@ import {MatIconModule} from '@angular/material/icon';
     MatTabsModule,
     MatCardModule,
     MatButtonToggleModule,
-    MatIconModule
+    MatIconModule,
+    MatToolbarModule,
+    MatButtonModule
   ],
   providers: [],
 })

@@ -47,5 +47,13 @@ p{
 .mat-tab-group{
   margin-bottom: 70px;
 }
+.mat-toolbar{
+  font-size: 12px;
+  border-top: #EEEFF2 1px solid;
+  border-bottom: #EEEFF2 1px solid;
+  background-color: white;
+}
 
-
+.spacer {
+  flex: 1 1 auto;
+}

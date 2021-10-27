@@ -10,13 +10,14 @@ img{
   margin: 0 auto;
 }
 
-.container{
+.container-fluid{
   padding: 0;
   margin: 0;
+  padding-bottom: 300px;
 }
 
 @media only screen and (min-width: 600px)  {
-.container{
+.container-fluid{
   width: 100%;
   margin: 0;
   padding-left: 112px;

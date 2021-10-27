@@ -5,25 +5,30 @@
   border: #EEEFF2 solid 2px;
   border-radius: 8px;
   padding: 24px;
+  width: 100%;
 }
 .mat-button-toggle-checked{
   border: #1E96D4 solid 2px;
   background-color: white;
   border-radius: 8px;
   padding: 24px;
+  width: 100%;
 }
 h3{
   color: #111111;
-  size: 12px;
+  size: 14px;
   text-align: left;
   margin: 0;
 }
 span{
   margin: 0;
   display: block;
-  font-size: 10px;
+  font-size: 11px;
   line-height: 1.5;
   font-weight: 400;
   color: #6B7280;
   text-align: left;
+}
+.mat-grid-list{
+  margin-bottom: 70px;
 }
