@@ -1,27 +1,37 @@
 <mat-toolbar color="primary">
   <mat-toolbar-row>
     <div class="row">
-      <div class="col-3">
+      <div class="col-md-3 d-none d-md-block">
         <p>
           Free Shipping
-          <span class="d-none d-lg-block">Get 2-day free shipping anywhere in North America.</span>
-        </p>
-      </div>
-      <div *ngIf="warranty" class="col-3">
-        <p>
-          {{warranty.name}}
           <span class="d-none d-lg-block"
-            >{{warranty.description}}</span
+            >Get 2-day free shipping anywhere in North America.</span
           >
         </p>
       </div>
+      <div  class="col-md-3 d-none d-md-block">
+        <ng-container *ngIf="warranty">
+          <p>
+            {{ warranty.name }}
+            <span class="d-none d-lg-block">{{ warranty.description }}</span>
+          </p>
+        </ng-container>
+      </div>
 
-      <div class="col-6">
-        <p>
-          ${{price + warranty?.additionalValue+ features?.additionalValue}}
-          <span>Need financing? Learn more </span>
-        </p>
-        <button mat-button>Buy now</button>
+      <div class="col-md-6 ">
+        <div class="row">
+          <div class="col-12 col-md-8 col-lg-10">
+            <p>
+              ${{
+                price + warranty?.additionalValue + features?.additionalValue
+              }}
+              <span>Need financing? Learn more </span>
+            </p>
+          </div>
+          <div class="col-12 col-md-4 col-lg-2">
+            <button mat-button>Buy now</button>
+          </div>
+        </div>
       </div>
     </div>
   </mat-toolbar-row>
