@@ -32,32 +32,26 @@ p span {
   padding: 16px 24px;
 }
 
-.col-md-3 p span {
-  display: none;
-}
-
-.col-lg-3 p span {
-  display: block;
-}
 
 
+@media only screen and (min-width: 600px) {
   p span {
     white-space: normal;
   }
   .col-3 {
-    display: block;
+    display:block;
   }
-  .col-lg-6{
+  .col-6 {
     display: flex;
     align-items: center;
     justify-content: right;
   }
-  .col-lg-6 p {
+  .col-6 p {
     font-size: 27px;
     text-align: right;
     margin-right: 32px;
   }
-  .col-lg-6 p span {
+  .col-6 p span {
     font-size: 14px;
     color: #6b7280;
     display: block;
@@ -72,3 +66,4 @@ p span {
     width: 100%;
   }
 
+}
