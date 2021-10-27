@@ -7,19 +7,18 @@
           <span class="d-none d-lg-block">Get 2-day free shipping anywhere in North America.</span>
         </p>
       </div>
-      <div class="col-3">
+      <div *ngIf="warranty" class="col-3">
         <p>
-          2 years warranty
+          {{warranty.name}}
           <span class="d-none d-lg-block"
-            >If anything goes wrong in the first two years, we'll replace it for
-            free.</span
+            >{{warranty.description}}</span
           >
         </p>
       </div>
 
       <div class="col-6">
         <p>
-          $295.95
+          ${{price + warranty?.additionalValue+ features?.additionalValue}}
           <span>Need financing? Learn more </span>
         </p>
         <button mat-button>Buy now</button>

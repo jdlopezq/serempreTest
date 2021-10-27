@@ -20,11 +20,14 @@ h3{
   text-align: left;
   margin: 0;
 }
-::ng-deep .mat-button-toggle-button{
-  display: flex !important;
-  text-align: left;
-}
 
 .mat-grid-list{
   margin-bottom: 70px;
+}
+.spacer {
+  flex: 1 1 auto;
+}
+span:last-child
+{
+  float: right;
 }

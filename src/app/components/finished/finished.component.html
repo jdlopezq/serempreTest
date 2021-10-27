@@ -1,17 +1,11 @@
 <h3>Choose your finish.</h3>
 <mat-grid-list cols="2" rowHeight="140px" [gutterSize]="'16px'">
-  <mat-grid-tile>
-    <mat-button-toggle value="bold">
-      <h3>Matte Black</h3>
-      <p> Of all of the celestial bodies that capture our attention and fascination as astronomers.</p>
+  <mat-grid-tile *ngFor="let color of colors">
+    <mat-button-toggle [value]="color">
+      <h3>{{color.name}}</h3>
+      <p>{{color.description}}</p>
     </mat-button-toggle>
   </mat-grid-tile>
-  <mat-grid-tile>
-    <mat-button-toggle value="italic">
-     <h3>Ivory White</h3>
-     <p>For the past 75 years, Sennheiser has put sound first. The new MOMENTUM True.</p>
-  </mat-button-toggle>
-  </mat-grid-tile>
 </mat-grid-list>
-<mat-button-toggle-group name="fontStyle" aria-label="Font Style">
+<mat-button-toggle-group (change)="setFinished($event)">
 </mat-button-toggle-group>

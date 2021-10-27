@@ -24,16 +24,29 @@
     </div>
   </mat-tab>
   <mat-tab label="Features">
-    <div class="example-large-box">Large content</div>
+    <div class="example-large-box">
+      <p>
+        For the past 75 years, Sennheiser has put sound first. The new MOMENTUM
+        True. Wireless 2 is no different. Thanks to leading auido technology and
+        innovation, these new eardbuds deliver the best listening experience
+        anytime, anywhere. Whit improved ergonomics designed for full day
+        wearing and efined touch controls fro a more personalised experience
+      </p>
+    </div>
   </mat-tab>
   <mat-tab label="What's in the box?">
-    <div class="example-large-box">Large content</div>
+    <div class="example-large-box">
+      <p>
+        For the past 75 years, Sennheiser has put sound first. The new MOMENTUM
+        True. Wireless 2
+      </p>
+    </div>
   </mat-tab>
 </mat-tab-group>
 
-<app-finished></app-finished>
-<app-warranty></app-warranty>
-<app-features></app-features>
+<app-finished (choosenFinished)="setUserFinished($event)"></app-finished>
+<app-warranty (choosenWarranty)="setUserWarranty($event)"></app-warranty>
+<app-features (choosenFeature)="setUserFeature($event)"></app-features>
 
 <h3>Specifications.</h3>
 <mat-toolbar *ngFor="let spec of specsKeys">
